@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.linuxtools.docker.ui.runDockerImageLaunchConfigurationType">
+    <booleanAttribute key="allocatePseudoTTY" value="false"/>
+    <booleanAttribute key="autoRemove" value="true"/>
+    <listAttribute key="binds"/>
+    <stringAttribute key="command" value=""/>
+    <stringAttribute key="connectionName" value="localhost"/>
+    <stringAttribute key="containerName" value="rhjoerg-git-server"/>
+    <stringAttribute key="cpuPriority" value="1024"/>
+    <booleanAttribute key="enableLimits" value="false"/>
+    <listAttribute key="envVariables"/>
+    <stringAttribute key="imageId" value="sha256:c3970bddc06dbef7e1f45462c65d6ddba8f25e570a1c6a247aaa6664df367e96"/>
+    <stringAttribute key="imageName" value="rhjoerg-git-server:latest"/>
+    <booleanAttribute key="interactive" value="false"/>
+    <mapAttribute key="labels"/>
+    <listAttribute key="links"/>
+    <stringAttribute key="memoryLimit" value="512"/>
+    <stringAttribute key="networkMode" value=""/>
+    <booleanAttribute key="privileged" value="false"/>
+    <booleanAttribute key="publishAllPorts" value="false"/>
+    <listAttribute key="publishedPorts">
+        <listEntry value="81/tcp:localhost:81:true"/>
+    </listAttribute>
+    <listAttribute key="volumes"/>
+    <listAttribute key="volumesFrom"/>
+</launchConfiguration>
