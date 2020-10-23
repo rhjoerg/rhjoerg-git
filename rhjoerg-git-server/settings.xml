@@ -1,0 +1,39 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                            http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<interactiveMode>false</interactiveMode>
+	
+	<servers>
+		<server>
+			<id>infinity</id>
+			<username>${env.INFINITY_USER}</username>
+			<password>${env.INFINITY_PASS}</password>
+			<configuration>
+				<endpointChecking>false</endpointChecking>
+				<securityProtocol>FTPS</securityProtocol>
+				<implicit>true</implicit>
+				<passiveMode>true</passiveMode>
+			</configuration>
+		</server>
+	</servers>
+	
+	<profiles>
+		<profile>
+			<id>central</id>
+			<repositories>
+				<repository>
+					<id>central</id>
+					<name>central Maven repository</name>
+					<url>https://repo.maven.apache.org/maven2/</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	
+	<activeProfiles>
+		<activeProfile>central</activeProfile>
+	</activeProfiles>
+
+</settings>
